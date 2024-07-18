@@ -1,0 +1,63 @@
+body {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+/* Seleciona a tag 'figure' e identifica qual id dela pela classe para receber as configurações informadas */
+figure.estilo_sukuna {
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 1px 1px 10px rgb(252, 251, 251);
+}
+
+/* Define que toda imagem da classe 'teste.estilo' da tag 'figure' terá as configurações informadas */
+figure.estilo_sukuna img {
+    width: 5%;
+    height: 25%;
+}
+
+/* Define a posição da figcaption */
+figure.estilo_sukuna figcaption {
+    opacity: 0;
+    position: absolute; 
+    top: 0px;
+    background-color: rgba(232, 6, 6, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+/* Quando o curso do mouse estiver em cima da imagem, exibe a descriação da figcaption */
+figure.estilo_sukuna:hover figcaption {
+    opacity: 1;
+}
+
+figure.estilo_gojo {
+    position: relative;
+    border: 2px solid rgb(5, 236, 248, 0.4);
+    box-shadow: 1px 1px 10px rgb(252, 251, 251);
+}
+
+figure.estilo_gojo img {
+    width: 5%;
+    height: 25%;
+}
+
+figure.estilo_gojo figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(2, 233, 233, 0.864);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.estilo_gojo:hover figcaption {
+    opacity: 1;
+}
